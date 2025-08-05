@@ -1,3 +1,227 @@
 My name is Ikumo Takahashi. I graduated with a degree in architecture, but pursued software engineering as a self-taught developer. I currently live in Yokohama, Japan. I have a deep appreciation for Japanese cuisine, and cheesecake is hands down my favorite dessert.
 
 Philosophically, I align with more conservative values and find inspiration in the writings of Nietzsche. I believe that a strong sense of self-control is essential to living a fulfilling and happy life.
+
+portfolio_lists = [
+  {
+    "id": 1,
+    "title": "TIPI",
+    "summary": "This app offers a personality assessment based on the 'Ten Item Personality Inventory (TIPI),' a tool grounded in psychological research.",
+    "description": "This application provides a simplified version of the Big-Five Personality Assessment consisting of five and ten items to diagnose Big-Five personality traits in a short time. Although slightly less accurate than traditional in-depth personality assessments, it has proven reliable in self-assessment, peer assessment and test reproducibility, making it a convenient way to measure personality. Correlations with external related traits also show results in line with predictions, making it an ideal tool when personality traits need to be identified in a short time, or when personality analysis is not the main objective.Translated with DeepL.com (free version)",
+    "githubURL": "https://github.com/IkUmO1118/tipi-personality",
+    "thumbnail": "/img/tipi.png",
+    "skillStack": ["react", "tailwindcss", "typescript", "supabase"],
+    "selected": true,
+    "createdAt": "2024/10/30"
+  },
+  {
+    "id": 2,
+    "title": "1RM.",
+    "summary": "1RM. is a tool for coaches offering online training. It allows them to easily manage student lists, training exercises, and track student progress",
+    "description": "1RM. is a powerful support tool for online training coaches. Through the app, coaches can manage lists of students, create training menus, track the training volume of each student and manage training methods for each part of the body in one place. 1RM. allows you to track the progress of each student in real time and easily optimise individual training plans. Optimisation is possible. This is an essential app for efficient and effective training instruction.",
+    "githubURL": "https://github.com/IkUmO1118/1RM-app",
+    "thumbnail": "/img/1rm.png",
+    "skillStack": ["react", "tailwindcss", "mongodb"],
+    "selected": false,
+    "createdAt": "2024/02/24"
+  },
+  {
+    "id": 3,
+    "title": "The Wild Oasis",
+    "summary": "The Wild Oasis Hotel app allows prospective guests to review, book and manage their stay. Users can view individual cabins and check availability.",
+    "description": "The Wild Oasis Hotel app provides a comprehensive tool for guests to experience the best of the hotel's offerings before and during their stay. Potential and registered guests can explore the hotel, discover each cabin's features, and view availability by date. With a user-friendly interface, the app lets guests filter cabins by their maximum capacity, ensuring that each booking meets their needs.Reservations are made easy, with a clear booking system allowing guests to select dates and confirm details. As payments are completed in person upon arrival, reservations are initially marked as 'unconfirmed.' Registered users can view all their past and upcoming bookings, as well as modify or cancel reservations as needed.To enhance the guest experience, new users can create a profile upon sign-up, enabling quicker access and allowing updates to their personal details, making hotel check-ins smoother and more efficient.",
+    "githubURL": "https://github.com/IkUmO1118/the-wild-oasis-website",
+    "thumbnail": "/img/the-wild-oasis.jpg",
+    "skillStack": ["nextjs", "tailwindcss", "supabase"],
+    "selected": true,
+    "createdAt": "2024/6/12"
+  },
+  {
+    "id": 4,
+    "title": "Portfolio Site",
+    "summary": "This portfolio site showcases past projects, including websites and applications.",
+    "description": "Built with Next.js and Tailwind CSS on the frontend and hosted on AWS EC2, this portfolio site serves as a comprehensive showcase of my work. Visitors can explore various projects, each demonstrating different facets of my technical skills and creative solutions in web and app development. This site reflects my dedication to building user-friendly and functional interfaces and my ability to manage infrastructure on the AWS platform.",
+    "githubURL": "https://github.com/IkUmO1118/portfolio-website",
+    "thumbnail": "/img/portfolio.png",
+    "skillStack": ["nextjs", "tailwindcss", "typescript"],
+    "selected": true,
+    "createdAt": "2024/10/08"
+  },
+  {
+    "id": 5,
+    "title": "Online Chat Messanger",
+    "summary": "The Online Chat Messenger allows users to easily connect and communicate with each other via UDP and TCP protocols.",
+    "description": "This 'Online Chat Messenger' project aims to build a real-time, data-first chat application and to develop an understanding of basic server operation and client-server architecture. Step by step, the client connects to the server via UDP through the CLI, starting with a simple system where messages are relayed, progressing to the creation of dedicated chat rooms and sending and receiving messages with token authentication.Translated with DeepL.com (free version)",
+    "githubURL": "https://github.com/IkUmO1118/recursion-cs/tree/main/backend-project-2/online-chat-messenger",
+    "thumbnail": "/img/terminal-app.png",
+    "skillStack": ["python"],
+    "selected": false,
+    "createdAt": "2024/9/14"
+  },
+  {
+    "id": 6,
+    "title": "Guess The Number Game",
+    "summary": "Enter two numbers to play a counting game with the computer based on the given range.",
+    "description": "",
+    "githubURL": "https://github.com/IkUmO1118/recursion-cs/tree/main/backend-project-1/guess-the-number-game",
+    "thumbnail": "/img/terminal-app.png",
+    "skillStack": ["python"],
+    "selected": false,
+    "createdAt": "2024/8/22"
+  },
+  {
+    "id": 7,
+    "title": "File Manipurator",
+    "summary": "By typing commands on a text file, you can reverse the contents of the file or replace certain characters in the file with others.",
+    "description": "",
+    "githubURL": "https://github.com/IkUmO1118/recursion-cs/tree/main/backend-project-1/file-manipurator",
+    "thumbnail": "/img/terminal-app.png",
+    "skillStack": ["python"],
+    "selected": false,
+    "createdAt": "2024/8/22"
+  },
+  {
+    "id": 8,
+    "title": "Markdown To HTML Converter",
+    "summary": "This service allows users to convert Markdown written in an editor into HTML.",
+    "description": "",
+    "githubURL": "https://github.com/IkUmO1118/recursion-cs/tree/main/backend-project-1/markdown-to-html-converter",
+    "thumbnail": "/img/terminal-app.png",
+    "skillStack": ["python"],
+    "selected": false,
+    "createdAt": "2024/8/22"
+  },
+  {
+    "id": 9,
+    "title": "Local Chat Messenger",
+    "summary": "This application uses Python socket communication and the faker package to exchange information between client and server.",
+    "description": "",
+    "githubURL": "https://github.com/IkUmO1118/recursion-cs/tree/main/backend-project-2/local-chat-messanger",
+    "thumbnail": "/img/terminal-app.png",
+    "skillStack": ["python"],
+    "selected": false,
+    "createdAt": "2024/8/22"
+  },
+  {
+    "id": 10,
+    "title": "Online Chat Messenger",
+    "summary": "This program enables users to create chat rooms and exchange messages with others in the same room via TCP communication between client and server.",
+    "description": "",
+    "githubURL": "https://github.com/IkUmO1118/recursion-cs/tree/main/backend-project-2/online-chat-messanger",
+    "thumbnail": "/img/terminal-app.png",
+    "skillStack": ["python"],
+    "selected": false,
+    "createdAt": "2024/11/2"
+  },
+  {
+    "id": 11,
+    "title": "Food Service Simulation",
+    "summary": "The project theme is meals and includes modeling of FoodItems, Restaurant that model people such as Customer.",
+    "description": "",
+    "githubURL": "https://github.com/IkUmO1118/recursion-cs/tree/main/backend-project-4/food-service-simulation",
+    "thumbnail": "/img/terminal-app.png",
+    "skillStack": ["php"],
+    "selected": false,
+    "createdAt": "2024/11/19"
+  },
+  {
+    "id": 12,
+    "title": "Restaurant Chain Mockup",
+    "summary": "Mock-up page of restaurant chain management system to efficiently manage restaurant chain details.",
+    "description": "",
+    "githubURL": "https://github.com/IkUmO1118/recursion-cs/tree/main/backend-project-4/restaurant-chain-mockup",
+    "thumbnail": "/img/restaurant-chain-mockup.png",
+    "skillStack": ["php"],
+    "selected": false,
+    "createdAt": "2024/11/23"
+  },
+  {
+    "id": 13,
+    "title": "Restaurant Chain Mockup Extension",
+    "summary": "Extend Restraurant Chain Mockup to allow users to fill out forms.",
+    "description": "",
+    "githubURL": "https://github.com/IkUmO1118/recursion-cs/tree/main/backend-project-4/restaurant-chain-mockup-extension",
+    "thumbnail": "/img/restaurant-chain-mockup-extension.png",
+    "skillStack": ["php"],
+    "selected": false,
+    "createdAt": "2024/11/23"
+  },
+  {
+    "id": 14,
+    "title": "Markdown to HTML",
+    "summary": "This application is a Markdown to HTML web application. ",
+    "description": "Users can input Markdown in the Editor, view real-time HTML rendering in the Preview, download the generated HTML file, or share it with others.",
+    "githubURL": "https://github.com/IkUmO1118/recursion-cs/tree/main/backend-project-4/markdown-to-html",
+    "thumbnail": "/img/markdown-to-html.png",
+    "skillStack": ["javascript", "php"],
+    "selected": false,
+    "createdAt": "2024/12/28"
+  },
+  {
+    "id": 15,
+    "title": "PlantUML Server",
+    "summary": "This service provides a text editor for users to write PlantUML syntax and returns diagrams. These diagrams can be displayed in SVG, PNG, or ASCII.",
+    "description": "This application is an online service for easy and efficient software design and modeling. Users can describe text-based design diagrams using PlantUML syntax and generate a variety of charts and diagrams in real time, including use case diagrams, class diagrams, activity diagrams, state diagrams, mind maps, and Gantt charts. In addition, the generated diagrams can be downloaded in SVG, PNG, and ASCII (text) formats, allowing you to flexibly utilize them for any purpose! Translated with DeepL.com (free version)",
+    "githubURL": "https://github.com/IkUmO1118/recursion-cs/tree/main/backend-project-4/plant-uml-server",
+    "thumbnail": "/img/plantuml-server.png",
+    "skillStack": ["javascript", "php"],
+    "selected": false,
+    "createdAt": "2024/01/01"
+  },
+  {
+    "id": 16,
+    "title": "Laboratory Animal Facility Performance Examination Tool",
+    "summary": "This tool is designed to assess the performance of laboratory animal facilities, focusing on the management and care of laboratory animals.",
+    "description": "This tool is designed to assess the performance of laboratory animal facilities, focusing on the management and care of laboratory animals. It provides a comprehensive evaluation framework that includes various performance indicators, allowing facilities to identify areas for improvement and ensure compliance with industry standards. The tool is user-friendly and can be easily integrated into existing facility management systems.",
+    "githubURL": "https://github.com/IkUmO1118/lafpe-t",
+    "thumbnail": "/img/lafpe-t.png",
+    "skillStack": ["react", "typescript", "tailwindcss", "php"],
+    "selected": true,
+    "createdAt": "2024/05/15"
+  }
+]
+
+resume_lists = [
+  {
+    "id": 1,
+    "type": "education",
+    "duration": "2021 - 2025",
+    "title": "Nihon University",
+    "description": "Faculty of Science and Engineering, Department of Architecture"
+  },
+  {
+    "id": 2,
+    "type": "education",
+    "duration": "2021",
+    "title": "Progate",
+    "description": "Studied HTML, CSS Ruby, Ruby on Rails, etc."
+  },
+  {
+    "id": 3,
+    "type": "education",
+    "duration": "2023 - present",
+    "title": "Udemy",
+    "description": "Studied HTML, CSS, JavaScript, Node.js, express, React, Next.js, Typescript, Python, Docker, AWS and AI etc."
+  },
+  {
+    "id": 4,
+    "type": "experiece",
+    "duration": "2024 - 2025",
+    "title": "Laboratory Animal Facility Performance Examination Tool",
+    "description": "I've been asked by a professor in my lab to create this."
+  },
+  {
+    "id": 5,
+    "type": "education",
+    "duration": "2024 - present",
+    "title": "Recursion",
+    "description": "Knowledge of computer science (data structures and algorithms), SQL, software engineering, design patterns, and operating systems"
+  },
+  {
+    "id": 6,
+    "type": "education",
+    "duration": "2024",
+    "title": "FE",
+    "description": "Persons who have the basic knowledge and skills required of personnel who create IT-based services, products, systems and software, and who have acquired practical application skills."
+  }
+]

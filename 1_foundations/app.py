@@ -77,7 +77,7 @@ class Me:
 
     def __init__(self):
         self.openai = OpenAI()
-        self.name = "Ed Donner"
+        self.name = "Ikumo Takahashi"
         reader = PdfReader("me/resume-v3.pdf")
         self.linkedin = ""
         for page in reader.pages:
