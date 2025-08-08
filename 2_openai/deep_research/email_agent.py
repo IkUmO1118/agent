@@ -1,19 +1,25 @@
 import os
 from typing import Dict
 
-import sendgrid
-from sendgrid.helpers.mail import Email, Mail, Content, To
+import sib_api_v3_sdk
 from agents import Agent, function_tool
 
 @function_tool
 def send_email(subject: str, html_body: str) -> Dict[str, str]:
-    """ Send an email with the given subject and HTML body """
-    sg = sendgrid.SendGridAPIClient(api_key=os.environ.get('SENDGRID_API_KEY'))
-    from_email = Email("ed@edwarddonner.com") # put your verified sender here
-    to_email = To("ed.donner@gmail.com") # put your recipient here
-    content = Content("text/html", html_body)
-    mail = Mail(from_email, to_email, subject, content).get()
-    response = sg.client.mail.send.post(request_body=mail)
+    """ Send out an email with the given subject and HTML body to all sales prospects """
+    configuration = sib_api_v3_sdk.Configuration()
+    configuration.api_key['api-key'] = os.environ.get('BREVO_API_KEY')
+
+    api_instance = sib_api_v3_sdk.TransactionalEmailsApi(sib_api_v3_sdk.ApiClient(configuration))
+
+    send_smtp_email = sib_api_v3_sdk.SendSmtpEmail(
+        to=[{"email": "ikumo1118free@gmail.com"}],
+        sender={"email": "ikumo123654@gmail.com"},
+        subject=subject,
+        html_content=html_body
+    )
+
+    response = api_instance.send_transac_email(send_smtp_email)
     print("Email response", response.status_code)
     return {"status": "success"}
 
